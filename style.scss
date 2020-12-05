@@ -1,0 +1,12 @@
+$negrito: bold;
+
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+div{
+  color: purple;
+  font-weight: map-get($font-weight, regular);
+}

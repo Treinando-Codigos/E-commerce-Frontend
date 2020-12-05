@@ -7,10 +7,10 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
     <script>
-      axios.get('http://localhost:3333/products').then(function(response){
-        response.data.orders.forEach(element => {
-          console.log(element);
+      axios.get('https://papaque.herokuapp.com/products').then(function(response){
+        response.data.products.forEach(element => {
           $("#content").append(element.valor+ "<br>");
           $("#content").append(element.lote + "<br>");
           $("#content").append(element.fabricacao + "<br>");
